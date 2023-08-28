@@ -31,18 +31,12 @@ public class Calculator {
         }
 
 
-        if (operation.equals("+")){
-            System.out.println("The sum is:"+(firstnum+secondnum));
-        }  
-        else    if (operation.equals("-")){
-            System.out.println("The difference is:"+(num1-num2));
-        } else    if (operation.equals("*")){
-            System.out.println("The result is:"+(num1*num2));
-        } else    if (operation.equals("/")){
-            System.out.println("The division is:"+(num1/num2));
-        }
-        else{
-            System.out.println("Operation Not Found");
+        switch (operation) {
+            case "+" -> System.out.println("The sum is:" + (firstnum + secondnum));
+            case "-" -> System.out.println("The difference is:" + (num1 - num2));
+            case "*" -> System.out.println("The result is:" + (num1 * num2));
+            case "/" -> System.out.println("The division is:" + (num1 / num2));
+            default -> System.out.println("Operation Not Found");
         }
     }
 }
