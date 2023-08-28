@@ -7,12 +7,12 @@ public class NumberGuessingGame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
-        int targetNumber = random.nextInt(100) + 1;
+        int targetNumber = random.nextInt(11);
 
         System.out.println("Welcome to the Guessing Game!");
 
         while (true) {
-            System.out.print("Enter your guess (1-100): ");
+            System.out.print("Enter your guess (1-10): ");
             int guess = scanner.nextInt();
 
             if (guess == targetNumber) {
@@ -27,5 +27,6 @@ public class NumberGuessingGame {
     }
 
 }
+
 
 
