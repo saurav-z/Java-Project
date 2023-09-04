@@ -17,7 +17,6 @@ public class login_system {
             System.out.println("What do you want to do today?");
             int whichtool;
             do {
-
                 System.out.println("**********************");
                 System.out.println("0. Exit");
                 System.out.println("1. Calculator");
