@@ -8,7 +8,6 @@ public class Calculator {
         Scanner scan=new Scanner(System.in);
         System.out.println(" ");
         System.out.println("** I hope you like my Calculator **");
-        System.out.println(" ");
         System.out.print ("Enter Operation (+,-,*,/): ");
         String operation=scan.next();
         System.out.print("Enter First Number: ");
