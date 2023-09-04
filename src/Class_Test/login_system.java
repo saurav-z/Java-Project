@@ -1,5 +1,4 @@
 package Class_Test;
-
 import java.util.Random;
 import java.util.Scanner;
 public class login_system {
@@ -14,7 +13,7 @@ public class login_system {
         if (username.equals(User) && password.equals(Pass)) {
             System.out.println("Welcome to Your Tools Collection!");
             System.out.println("What do you want to do today?");
-            int whichtool=1;
+            int whichtool;
             do {
 
             System.out.println("**********************");
