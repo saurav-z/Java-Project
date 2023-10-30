@@ -89,7 +89,7 @@ public class login_system {
                     case 4:
                         System.out.println("You choose Vowel Consonant Check");
                         System.out.println("Enter a character");
-                        String character = scan.next().toLowerCase();
+                        String character = scan.nextLine().toLowerCase();
                         if (character.length() == 1) {
                             switch (character) {
                                 case "a", "e", "i", "o", "u":
