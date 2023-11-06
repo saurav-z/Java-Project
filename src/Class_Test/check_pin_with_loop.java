@@ -8,7 +8,7 @@ public class check_pin_with_loop {
         Scanner sc=new Scanner(System.in);
         System.out.println("You have 3 attempts");
         while(i<=3){
-            System.out.println("Enter Pin to Login: ");
+            System.out.println("Enter your Pin: ");
             enteredPin=sc.nextInt();
             if (enteredPin==correctPin){
                 System.out.println("You are Logged in");
@@ -22,3 +22,4 @@ public class check_pin_with_loop {
         }
     }
 }
+
