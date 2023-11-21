@@ -10,7 +10,6 @@ public class ListElementsString {
         for(int i=0;i<len;i++){
             char element=input.charAt(i);
             System.out.print(element);
-
         }
     }
     }

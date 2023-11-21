@@ -3,8 +3,6 @@ package EighthProject;
 import java.util.Scanner;
 
 public class ReverseString {
-    private static String reverse;
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter String: ");
