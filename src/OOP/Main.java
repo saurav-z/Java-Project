@@ -1,10 +1,9 @@
 package OOP;
 
-import OOP.models.Mammals;
+import OOP.models.ConstructorStudent;
+import OOP.models.SetterLessObject;
 import OOP.models.Student;
 import OOP.models.Section;
-
-import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
@@ -94,13 +93,20 @@ public class Main {
 
 
 
+        // Make new Object from SetterLessObject
+        SetterLessObject pizzaOrder=new SetterLessObject("Sifal","Mitrapark","Hacke","admin@ekg.com.np",98000,102);
 
-              // Make new Object from Mammals Class
-        Mammals human=new Mammals();
-        System.out.println(human.getNo_of_chambers());
-        human.setNo_of_chambers(12);
-        System.out.println(human.getNo_of_chambers());
-        System.out.println("Is warm Blooded: "+human.isWarmBlooded());
+        System.out.println(pizzaOrder.getAddress()+pizzaOrder.getEmail()+pizzaOrder.getName());
+        pizzaOrder.displayOrder();
 
-    }
-}
+
+
+
+
+
+        // Make new Object from ConstructorStudent
+        int[] mark1={10,20,30,40,50,60};
+        ConstructorStudent stud1=new ConstructorStudent("Hacke","Yala",12,mark1);
+        stud1.displayInformation();
+
+    }}
