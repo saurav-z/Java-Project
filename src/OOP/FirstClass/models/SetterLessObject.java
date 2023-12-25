@@ -1,4 +1,4 @@
-package OOP.models;
+package OOP.FirstClass.models;
 
 public class SetterLessObject {
     String Address,Street,Name,Email;

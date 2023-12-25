@@ -1,4 +1,4 @@
-package OOP.models;
+package OOP.FirstClass.models;
 
 public class Section {
     int room_no;

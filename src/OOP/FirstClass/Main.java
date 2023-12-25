@@ -1,9 +1,9 @@
-package OOP;
+package OOP.FirstClass;
 
-import OOP.models.ConstructorStudent;
-import OOP.models.SetterLessObject;
-import OOP.models.Student;
-import OOP.models.Section;
+import OOP.FirstClass.models.ConstructorStudent;
+import OOP.FirstClass.models.SetterLessObject;
+import OOP.FirstClass.models.Student;
+import OOP.FirstClass.models.Section;
 
 public class Main {
     public static void main(String[] args) {
