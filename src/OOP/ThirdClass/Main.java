@@ -4,10 +4,12 @@ import OOP.ThirdClass.models.Order;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         // Create three items
+        Scanner sc=new Scanner(System.in);
         Item item1 = new Item(1, "Shoes", 100);
         Item item2 = new Item(2, "Hat", 50);
         Item item3 = new Item(3, "Pant", 200);
@@ -36,5 +38,6 @@ public class Main {
         System.out.println("Order 1 Total: NRS" + order1.getOrderTotal());
         System.out.println("Order 2 Total: NRS" + order2.getOrderTotal());
         System.out.println("Order 3 Total: NRS" + order3.getOrderTotal());
+
     }
 }

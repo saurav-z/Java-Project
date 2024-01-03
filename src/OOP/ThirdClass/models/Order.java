@@ -4,6 +4,7 @@ import OOP.ThirdClass.models.Item;
 
 import java.util.List;
 
+
 public class Order {
     private int id;
     private List<Item> items;
@@ -37,5 +38,7 @@ public class Order {
             total += item.getPrice();
         }
         return total;
+
     }
+
 }
