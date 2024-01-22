@@ -1,10 +1,12 @@
 package OOP.OrderingSystem;
 
+import OOP.OrderingSystem.models.Customer;
 import OOP.OrderingSystem.models.Items;
 import OOP.OrderingSystem.models.Order;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Shop {
     public static void main(String[] args) {
@@ -26,14 +28,12 @@ public class Shop {
         itemList1.add(item3);
         itemList1.add(item6);
 
-        Order order1 = new Order("Sumit", "2024-01-22", itemList1);
 
         // Creating another order with 2 items
         List<Items> itemList2 = new ArrayList<>();
         itemList2.add(item2);
         itemList2.add(item8);
 
-        Order order2 = new Order("Prayash", "2024-01-23", itemList2);
 
         // Creating a third order with 5 items
         List<Items> itemList3 = new ArrayList<>();
@@ -43,16 +43,46 @@ public class Shop {
         itemList3.add(item9);
         itemList3.add(item10);
 
+
+
+        // Creating customers
+        Customer customer1 = new Customer("Sumit");
+        Customer customer2 = new Customer("Prayash");
+        Customer customer3 = new Customer("Hacke");
+
+
+
+        Order order1 = new Order("Sumit", "2024-01-22", itemList1);
+        customer1.addOrderToHistory(order1);
+
+        Order order2 = new Order("Prayash", "2024-01-23", itemList2);
+        customer2.addOrderToHistory(order2);
+
         Order order3 = new Order("Hacke", "2024-01-24", itemList3);
+        customer3.addOrderToHistory(order3);
 
-        // Generating and printing bills for the orders
-        System.out.println("Generating Bill for "+order1.getName());
-        order1.generateBill();
+        // Providing options to the user
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("1. Print Bill");
+        System.out.println("2. View Order History");
+        System.out.print("Enter your choice: ");
+        int choice = scanner.nextInt();
 
-        System.out.println("\nGenerating Bill for "+order2.getName());
-        order2.generateBill();
-
-        System.out.println("\nGenerating Bill for "+order3.getName());
-        order3.generateBill();
+        switch (choice) {
+            case 1:
+                // Print Bill
+                System.out.println("Generating Bill for " + customer1.getName());
+                order1.generateBill();
+                break;
+            case 2:
+                // View Order History
+                System.out.print("Enter date to view order history (e.g., 2024-01-22): ");
+                String inputDate = scanner.next();
+                customer1.viewOrderHistory(inputDate);
+                break;
+            default:
+                System.out.println("Invalid choice");
+        }
     }
+
 }
