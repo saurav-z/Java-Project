@@ -39,7 +39,7 @@ Feel free to explore the files and understand the core concepts of Java programm
 
 ## 💻 Final Projects
 
-Inside the `final-projects/` folder, I've included the **final projects** that I had to submit by the end of the course. These projects demonstrate a variety of Java programming concepts, including:
+Inside the `FinalProjects/` folder, I've included the **final projects** that I had to submit by the end of the course. These projects demonstrate a variety of Java programming concepts, including:
 
 - **Object-Oriented Programming (OOP)** 🏗️
 - **Data Structures** 📊
