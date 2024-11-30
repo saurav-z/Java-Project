@@ -70,7 +70,7 @@ For more tutorials, blog posts, and project showcases, visit my personal website
 
 ---
 
-📞##  Contact
+## 📞 Contact
 
 Feel free to contact me via the following platforms:
 
